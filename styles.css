@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif; /* Escolha uma fonte */
+  background-color: #000000; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+  margin: 10px;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  h1, h2 {
+  font-family: 'Montserrat', sans-serif; /* Fonte para os títulos */
+  color: var(--cor-principal);
+}
+}
+
+header {
+  background-color: #333; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto do cabeçalho */
+  text-align: center;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+}
+
+h2 {
+  color: #333; /* Cor dos títulos */
+}
+
+footer {
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+  text-align: center;
+  padding: 10px 0;
+}
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: midnightblue;
+  color: white;
+}
+.projetos-grid a{
+  color: wheat;
+text-decoration: none;
+  transition: color 0.3s ease;
+}
+button {
+  background-color: var(--cor-principal);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--cor-destaque);
+}
+
+/* Estilo básico para cada cartão de projeto */
+.projeto-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+}
+section {
+  padding: 40px 0; /* Espaçamento vertical entre as seções */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* Estilo para os links de navegação */
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+/* Defina suas cores no seletor :root */
+:root {
+  --cor-principal: #007bff; /* Exemplo de azul */
+  --cor-destaque: #28a745; /* Exemplo de verde */
+  --cor-fundo: #f4f4f4;
+  --cor-texto: #333;
+}
+.botao-contato {
+  background-color: var(--cor-destaque);
+  color: #fff;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  
+}
+figure img {
+  width: 200px;
+  height: auto;
+  display: flex;
+  border-radius: 50%;
+  justify-content: left;
+  align-items: left;
+  text-align: left
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.container-sobre-mim {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+header {
+  background-color: black;
+  color: white ;
+  padding: auto;
+  margin: 0;
+  
+}
+header nav a {
+  color: white;
+  font-weight: bold;
+}
